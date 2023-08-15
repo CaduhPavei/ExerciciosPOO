@@ -1,3 +1,5 @@
+package Aula3;
+
 import java.util.Scanner;
 public class Exercicio2 {
 
@@ -45,7 +47,7 @@ public class Exercicio2 {
         }
 
 
-        DoWhile
+        //DoWhile
         int y=10;
         do {
             System.out.println("Valor " + y);
