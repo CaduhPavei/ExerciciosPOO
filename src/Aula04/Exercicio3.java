@@ -1,5 +1,5 @@
-package Aula4;
-import java.util.Scanner;
+package Aula04;
+
 public class Exercicio3 {
     public static void main(String[] args) {
 //        Scanner scan = new Scanner(System.in);
