@@ -53,6 +53,7 @@ public class AlunoMain {
         aluno01.calcularMediaGeral();
 
         System.out.println("Aluno "+ aluno01.nome + " possui a média " + aluno01.calcularMediaGeral());
+        System.out.println("Aluno "+aluno01.nome+ " tem "+aluno01.frequenciaAluno()+"% de frequência");
 
         Integer mediaGeralAluno = aluno01.calcularMediaGeral();
 
