@@ -1,4 +1,4 @@
-package Aula06;
+package Aula07;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -17,6 +17,7 @@ public class Aluno {
     String turma;
     Integer anoConclue;
     Integer anoInicio;
+    List<Boolean> frequencia;
 
     public void imprimirDadosAluno(){
         System.out.println("Código: " + codigo + " Nome: " + nome + " Data de nascimento: " + dataNascimento);
@@ -48,5 +49,16 @@ public class Aluno {
         }
         return (mediaGeral / disciplinasNotas.size());
     }
-
+    public Double frequenciaAluno(){
+        double faltas=0, presencas=0, total;
+        for (int i=0; i< frequencia.size();i++){
+            if (frequencia.get(i)==false){
+                faltas++;
+            }else {
+                presencas++;
+            }
+        }
+        total=((frequencia.size()-faltas)/frequencia.size())*100;
+        return total;
+    }
 }

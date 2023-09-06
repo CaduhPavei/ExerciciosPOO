@@ -1,4 +1,4 @@
-package Aula06;
+package Aula07;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -12,6 +12,18 @@ public class AlunoMain {
         Map<String, List<Integer>> disciplinas = new HashMap<>();
         List<Integer> notasMatematica = new ArrayList<>();
         List<Integer> notasPortugues = new ArrayList<>();
+        List<Boolean> frequenciasAluno01 = new ArrayList<>();
+
+        frequenciasAluno01.add(true);
+        frequenciasAluno01.add(false);
+        frequenciasAluno01.add(false);
+        frequenciasAluno01.add(true);
+        frequenciasAluno01.add(true);
+        frequenciasAluno01.add(false);
+        frequenciasAluno01.add(true);
+        frequenciasAluno01.add(true);
+        frequenciasAluno01.add(true);
+        frequenciasAluno01.add(true);
 
         aluno01.codigo = 122334;
         aluno01.nome = "Dr. Webber";
@@ -24,10 +36,11 @@ public class AlunoMain {
         aluno01.sexo = "Masculino";
         aluno01.nomeMae = "Laura";
         aluno01.turma = "ADS2";
+        aluno01.frequencia = frequenciasAluno01;
 
         notasMatematica.add(10);
         notasMatematica.add(8);
-//        notasMatematica.add(5);
+
         disciplinas.put("Matemática", notasMatematica);
         notasPortugues.add(8);
         notasPortugues.add(6);
@@ -44,9 +57,10 @@ public class AlunoMain {
         Integer mediaGeralAluno = aluno01.calcularMediaGeral();
 
         Boletim boletim = new Boletim();
-        String mensagemAprovacao = boletim.verificaAlunoAprovado(aluno01.nome,mediaGeralAluno);
+        String mensagemAprovacao = boletim.verificaAlunoAprovado(aluno01.nome,mediaGeralAluno, aluno01.frequenciaAluno());
 
         System.out.println(mensagemAprovacao);
+
 
     }
 }
