@@ -18,7 +18,7 @@ public class AlunoMain {
         frequenciasAluno01.add(false);
         frequenciasAluno01.add(false);
         frequenciasAluno01.add(true);
-        frequenciasAluno01.add(true);
+        frequenciasAluno01.add(false);
         frequenciasAluno01.add(false);
         frequenciasAluno01.add(true);
         frequenciasAluno01.add(true);

@@ -5,7 +5,7 @@ public class Boletim {
     String aluno;
     public String verificaAlunoAprovado(String aluno, Integer mediaGeral, Double frequencia) {
         if (frequencia<70){
-            return "o aluno "+aluno+" está REPROVADO";
+            return "o aluno "+aluno+" está REPROVADO por faltas!";
         }else {
             if (mediaGeral >= 7) {
                 return "O aluno " + aluno + " está APROVADO";
