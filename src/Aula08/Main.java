@@ -34,10 +34,14 @@ public class Main {
         filiacao.nomePai = "Otávio";
         filiacao.nomeMae = "Lucemar";
 
-        Bolsa bolsa = new Bolsa();
-        bolsa.dataInicial = LocalDate.of(2022,8,15);
-        bolsa.dataFinal = LocalDate.of(2024,8,15);
-        bolsa.descrissao = "Estado";
+        aluno.filiacao = filiacao;
+
+        Bolsa bolsa1 = new Bolsa();
+        bolsa1.dataInicial = LocalDate.of(2022,8,15);
+        bolsa1.dataFinal = LocalDate.of(2024,8,15);
+        bolsa1.descrissao = "Estado";
+
+        aluno.bolsa.add(bolsa1);
 
 
         Integer notaGeral = aluno.calcularMediaGeral();
