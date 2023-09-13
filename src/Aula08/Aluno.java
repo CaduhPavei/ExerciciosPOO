@@ -13,7 +13,7 @@ public class Aluno {
     String telefone;
     String endereco;
     Filiacao filiacao;
-    List<Bolsa> bolsa = new ArrayList<>();
+    Bolsa bolsa;
     List<Disciplina> disciplinas = new ArrayList<>();
     List<Frequencia> frequencias = new ArrayList<>();
 
