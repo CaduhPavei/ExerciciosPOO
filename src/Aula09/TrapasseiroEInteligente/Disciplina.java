@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Disciplina {
-        String nome;
-        String professor;
+        private String nome;
+        private String professor;
 
     public Disciplina(String nome, List<Integer> notas) {
         this.nome = nome;
