@@ -1,10 +1,12 @@
-package Aula09.TrapasseiroEInteligente;
+package Aula10;
 
 import java.time.LocalDate;
 
 public class Professor {
 
+    private Integer codigo;
     private String nome;
+    private LocalDate dataNascimento;
     private String matricula;
     private LocalDate dataContratacao;
 
