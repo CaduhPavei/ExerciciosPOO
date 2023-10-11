@@ -3,8 +3,8 @@ package Aula09.Construtores;
 import java.time.LocalDate;
 
 public class Frequencia {
-    LocalDate dataAula;
-    Boolean presenca;
+    public LocalDate dataAula;
+    public Boolean presenca;
 
     @Override
     public String toString() {
